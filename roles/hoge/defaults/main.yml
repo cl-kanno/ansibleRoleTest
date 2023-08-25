@@ -1,0 +1,6 @@
+---
+# defaults file for hoge
+postgresql:
+  host: defaultHost
+  user: defaultUser
+  password: defautlPassword

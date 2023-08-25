@@ -1,0 +1,27 @@
+---
+# tasks file for hoge
+- name: Install psycopg2 python package
+  ansible.builtin.pip:
+    name:
+      - psycopg2-binary
+    extra_args: --user
+- name: Ping PostgreSQL server
+  community.postgresql.postgresql_ping:
+    login_user: "{{ postgresql.user }}"
+    login_password: "{{ postgresql.password }}"
+    login_host: "{{ postgresql.host }}"
+    db: postgres
+  register: result
+- name: Create a new database
+  community.postgresql.postgresql_db:
+    login_user: "{{ postgresql.user }}"
+    login_password: "{{ postgresql.password }}"
+    login_host: "{{ postgresql.host }}"
+    name: hogeee
+- name: Run several queries against hogeee db
+  community.postgresql.postgresql_query:
+    login_user: "{{ postgresql.user }}"
+    login_password: "{{ postgresql.password }}"
+    login_host: "{{ postgresql.host }}"
+    db: hogeee
+    query: SELECT version()

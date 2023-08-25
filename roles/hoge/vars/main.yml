@@ -1,0 +1,6 @@
+---
+# vars file for hoge
+postgresql:
+  host:
+  user:
+  password:
