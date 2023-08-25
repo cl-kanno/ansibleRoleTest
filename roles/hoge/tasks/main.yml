@@ -25,7 +25,7 @@
     login_host: "{{ postgresql.host }}"
     db: hogeee
     query: SELECT version()
-- name: Select query to test_db with named_args
+- name: Exec query
   community.postgresql.postgresql_script:
     login_user: "{{ postgresql.user }}"
     login_password: "{{ postgresql.password }}"
