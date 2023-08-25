@@ -28,4 +28,4 @@
 - name: Select query to test_db with named_args
   community.postgresql.postgresql_script:
     db: hogeee
-    path: ../files/test.sql
+    path: files/test.sql
