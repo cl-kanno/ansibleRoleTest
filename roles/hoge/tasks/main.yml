@@ -31,4 +31,4 @@
     login_password: "{{ postgresql.password }}"
     login_host: "{{ postgresql.host }}"
     db: hogeee
-    path: test.sql
+    path: "{{ role_path }}/files/test.sql"
