@@ -1,1 +1,1 @@
-SELECT version();
+SELECT %(select_what);

@@ -32,3 +32,5 @@
     login_host: "{{ postgresql.host }}"
     db: hogeee
     path: "{{ role_path }}/files/test.sql"
+    named_args:
+      select_what: "{{ select_what }}"

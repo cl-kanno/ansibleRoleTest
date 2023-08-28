@@ -4,3 +4,4 @@ postgresql:
   host:
   user:
   password:
+select_what:

@@ -4,3 +4,4 @@ postgresql:
   host: defaultHost
   user: defaultUser
   password: defautlPassword
+select_what: malfunction
