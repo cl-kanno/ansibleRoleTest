@@ -1,1 +1,1 @@
-SELECT %(select_what);
+SELECT %(select_what)s;
